@@ -1,0 +1,25 @@
+Use the Builder Pattern to encapsulate the construction of
+a product and allow it to be constructed in steps.
+
+
+Why use the Builder Pattern?
+Remember Iterator? We encapsulated the iteration into a separate
+object and hid the internal representation of the collection from the
+client. It’s the same idea here: we encapsulate the creation of the
+trip planner in an object (let’s call it a builder), and have our client
+ask the builder to construct the trip planner structure for it.
+
+Builder Benefits
+ß Encapsulates the way a complex object is
+constructed.
+ß Allows objects to be constructed in a multi step and
+varying process (as opposed to one step factories).
+ß Hides the internal representation of the product from
+the client.
+ß Product implementations can be swapped in and out
+because the client only sees an abstract interface.
+
+Builder Uses and Drawbacks
+ß Often used for building composite structures.
+ß Constructing objects requires more domain
+knowledge of the client than when using a Factory.

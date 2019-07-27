@@ -1,0 +1,19 @@
+Abstract Factory patterns work around a super-factory which creates other
+factories. This factory is also called as factory of factories. This type of design
+pattern comes under creational pattern as this pattern provides one of the best
+ways to create an object.
+In Abstract Factory pattern, an interface is responsible for creating a factory of
+related objects without explicitly specifying their classes. Each generated factory
+can give the objects as per the Factory pattern.
+
+מוטיבציה
+.Motif ו Presentation manager ניקח לדוגמא אפליקציה מסוימת שתומכת במספר אפשרויות של ממשק גרפי כמו למשל
+הסטנדרטים השונים של הממשקים מביאים לכך שכפתורים, חלונות, פסי הגלילה וכו' נראים ומתנהגים אחרת בכל אחד מהם .לא
+נרצה לכתוב עותקים של האפליקציה לכל אפשרות גרפית שקיים בעולם.
+כדי להיות פורטביליים לסוגים השונים של הממשקים הגרפיים הקיימים ושל אלה שיתווספו ,האפליקציה לא תפרט בקוד אילו
+אובייקטים בדיוק היא תיצור עבור כפתור, פס גלילה וכו' עבור כל סטנדרט מסוים .אם היא הייתה עושה כן זה היה מקשה לשנות את
+הקוד עבור כל סטנדרט מכיוון שהיינו צריכים לעבור בכל פעם על כל הקוד ולמצוא את כל המקומות שאובייקטים אלה מופיעים.
+מתי כדאי?
+- כאשר אנו רוצים שהמערכת תהיה חופשית מבחינת ייצור, ייצוג והרכבת האובייקטים שלה.
+- כאשר משפחות של אובייקטים שקשורים אחד לשני מעוצבים לעבוד ביחד
+- אנחנו רוצים לספק ספריה למשתמש ולא לחשוף את האימפלמנטציה אלא רק את הממשקים
